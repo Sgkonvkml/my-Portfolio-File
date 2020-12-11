@@ -224,13 +224,7 @@ section .row.project .column {
 }
 
 section .row.project .column .inner img {
-  width: 25%;
-  border-radius: 100%;
-}
-
-section .row.project .column .inner .job {
-  color: #999999;
-  font-size: 14px;
+  width: 100%;
 }
 
 section#intro {
