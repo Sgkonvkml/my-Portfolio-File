@@ -1,0 +1,357 @@
+@charset "UTF-8";
+html,body{ height: 100%; }
+body{
+  font-family: 'Noto Sans KR',
+  sans-serif;
+  color:#666666;
+}
+ul,ol{ list-style: none; }
+a{ color: #666666; }
+h1,h2,h3,h4,h5,h6{ line-height: 1; }
+#wrap{
+  width: 1320px;
+  margin: 0 auto;
+  background: #f1f1f1;
+}
+
+/*상단 고정형 메뉴*/
+#header{
+  position: fixed;
+  width: 1320px;
+  margin: 0 auto;
+  top: 0;
+  overflow: hidden;
+  padding: 45px 20px 0;
+}
+#header .inner{ float: right; }
+#header .inner #login_menu,#header .inner #gnb{ float:left; }
+#logo{ float: left; }
+#gnb{
+  overflow: hidden;
+  margin-right: 105px;
+}
+#gnb li{
+  float: left;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#gnb li:first-child{
+  margin-left: 0;
+}
+
+#gnb li a{
+  line-height: 20px;
+}
+
+#login_menu{
+  overflow: hidden;
+}
+
+#login_menu li{
+  float: left;
+  height: 20px;
+  margin-left:16px;
+}
+
+#login_menu li:first-child{
+  margin-left: 0;
+}
+
+#login_menu li span.count{
+  display: inline-block;
+  background: #ffc01d;
+  color: white;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+#login_menu li a{
+  line-height: 20px;
+}
+
+/*메인 배너 영역*/
+#mainbanner{
+  /* background: url('../img/main_banner_bg.png'); */
+  background: url('../img/main_banner/mainbanner_1.png'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  transition: background 1s;
+}
+
+#mainbanner .inner{
+  position: relative;
+  /* width: 1320px; */
+  height: 100vh;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+
+#mainbanner .maintext{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  min-height: 254px;
+  top: calc(50% - 273px);
+}
+
+/*mainbanner inner bg white*/
+/*메인배너 메인타이틀*/
+#mainbanner .inner .maintext p{
+  font-size: 50px;
+  color: #333333;
+}
+
+#mainbanner .inner .maintext p.maintitle{
+  line-height: 60px;
+}
+
+/*메인배너 서브타이틀*/
+#mainbanner .inner .maintext p.subtitle{
+  margin-top: 30px;
+  font-size: 20px;
+  color: #666666;
+}
+
+/*mainbanner inner bg black*/
+/*메인배너 메인타이틀*/
+#mainbanner .inner.bg-black .maintext p{
+  color: white;
+}
+/*메인배너 서브타이틀*/
+#mainbanner .inner.bg-black .maintext p.subtitle{
+  color: white;
+}
+
+a.common_btn{
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 5px;
+  background: #0055b8;
+  color: white;
+  font-size: 20px;
+  margin-top: 38px;
+}
+
+#container section .inner{
+  width: 1320px;
+  min-height: 650px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+#container section .inner h2{
+  font-size: 45px;
+  line-height: 60px;
+  color: #333333;
+}
+
+#container section .inner .subtitle{
+  margin-top: 27px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#container section:nth-of-type(1) .inner{
+  padding-top: 165px;
+  min-height: 485px;
+}
+
+#container section:nth-of-type(2) .inner{
+  padding-top: 140px;
+  min-height: 510px;
+}
+
+#container section:nth-child(even){
+  background: #f9f9f9;
+}
+
+#container section .inner .box_wrap{
+  overflow: hidden;
+}
+
+#container section .inner .box_wrap li{
+  float: left;
+  width: calc(25% - 40px);
+  padding: 0 20px;
+  text-align: center;
+}
+
+#container section .inner .box_wrap li .items{
+  border: 1px solid #e3e3e3;
+  min-height: 180px;
+  padding: 45px 0;
+}
+
+#container section .inner .box_wrap li .items h3{
+  font-size: 20px;
+  line-height: 20px;
+  color: #252525;
+}
+
+#container section .inner .box_wrap li .items p{
+  margin-top: 30px;
+  margin-bottom: 32px;
+  line-height: 24px;
+}
+
+#container section .inner .thumb_img_wrap{
+  text-align: center;/**자식요소 ul을 가운데 정렬하겠다.**/
+}
+
+#container section .inner .thumb_img_wrap ul{
+  overflow: hidden;
+  display: inline-block;/**자식요소 li의 컨텐츠 크기만큼 너비가 지정된다.**/
+}
+
+#container section .inner .thumb_img_wrap ul:nth-child(1){
+  margin-top: 75px;
+}
+#container section .inner .thumb_img_wrap ul:nth-child(2){
+  margin-top: 80px;
+}
+
+#container section .inner .thumb_img_wrap ul li{
+  display: inline-block;
+  float: left;
+  width: 16.666%;
+}
+
+#container section .inner .thumb_img_wrap ul li img{
+  width: 100%;/**이미지가 초기값 220px 이상 또는 이하로 변경시 li %기준으로 변경된다.**/
+}
+
+/*section 3번 style*/
+#container section .inner .box{
+  float: left;
+  width: 50%;
+  min-height: 650px;
+  text-align: center;
+}
+
+#container section .inner .box.img{
+  background-size: cover;
+}
+
+#container section:nth-child(3) .inner .box.img{
+  background: url('../img/section_3/bg_img.png') no-repeat center center;
+}
+
+#container section:nth-child(4){
+  background-color: #f4f4f4;
+  background-image: url('../img/section_4/bg_img.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: calc(50% + 660px) center;
+}
+
+#container section:nth-child(5){
+  background: #1d314a;
+}
+
+#container section:nth-child(5) .inner h2{
+  color: white;
+}
+
+#container section:nth-child(5) .inner .box.img{
+  background: url('../img/section_5/bg_img.png') no-repeat center center;
+}
+
+#container section .inner .box .text_box{
+  display: inline-block;
+  text-align: left;
+  margin-top: 160px;
+}
+
+#container section .inner .box .text_box a{ text-align: center }
+
+/*하단 영역*/
+#footer{
+  background: #eeeeee;
+}
+
+#footer .inner{
+  position: relative;
+  width: 1280px;
+  height: 200px;
+  padding: 50px 20px 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#footer .inner .f_box{
+  float: left;
+}
+
+#footer .inner .f_box:nth-child(2){
+  padding-left: 77px;
+}
+
+/*site menu*/
+#footer .inner .f_box ul{ overflow: hidden; }
+
+#footer .inner .f_box ul li{
+  height: 20px;
+  float: left;
+  margin-right: 40px;
+}
+
+#footer .inner .f_box ul li:last-child{
+  margin-right: 0;
+}
+
+#footer .inner .f_box ul li a{
+  line-height: 20px;
+  color: #333333;
+}
+
+#footer .inner .f_box .tel{
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 20px;
+  color: #333333;
+  font-weight: 900;
+}
+
+#footer .inner .f_box .copyright{
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 23px;
+  color: #777777;
+}
+
+#familysite {
+  position: absolute;
+  width: 190px;
+  height: 30px;
+  top: 40px;
+  right: 20px;
+  border: 1px solid #d1d1d1;
+  color: #333333;
+  outline: none;
+  appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 30px;
+  background: url('../img/select_box_arrow.png') no-repeat;
+  background-position: right center;
+}
+
+select::-ms-expand{
+  display: none;
+}
+
+#familysite:focus{
+  border: 1px solid #999999;
+}

@@ -1,0 +1,313 @@
+@charset "UTF-8";
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+/*mobile button start*/
+input[type="checkbox"]#gnbcheck { display: none; }
+
+/*mobile close button*/
+#mobile_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  display: none;
+}
+
+#mobile_close_btn:after,#mobile_close_btn:before {
+  content:'';
+  position: absolute;
+  height: 1.6px;
+  width: 32px;
+  background: #ffffff;
+  top: 16px;
+}
+
+#mobile_close_btn:before {
+  transform: rotate(40deg);
+}
+
+#mobile_close_btn:after {
+  transform: rotate(-40deg);
+}
+
+
+#gnbbtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  z-index: 9999;
+  display: none;
+}
+
+#gnbbtn > span {
+  position: absolute;
+  top: 16px;
+  height: 1.6px;
+  width: 32px;
+  background: #ffffff;
+}
+
+#gnbbtn > span:nth-child(1) {
+  top: 8px;
+}
+
+#gnbbtn > span:nth-child(2) {
+  top: 24px;
+}
+
+/* 전체레이아웃 */
+.wrap {
+  position: relative;
+  width: 100rem;
+  min-width: 230px;
+  margin: 0 auto;
+}
+/* 상단영역 */
+.header {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 10rem;
+  background: skyblue;
+  z-index: 8000;
+}
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 15rem;
+  height: 10rem;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 10rem;
+  text-transform: uppercase;
+}
+.gnb {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+
+/*****시험 코드 입력영역*********/
+.gnb:hover .submenu{
+  height: 16rem;
+}
+
+.mainmenu{
+   position: relative;
+   width: 80rem;
+   overflow: hidden;
+   background-color: #000000;
+}
+
+.mainmenu > li{
+  position: relative;
+  width: 25%;
+  float: left;
+}
+
+.mainmenu > li > a{
+  position: relative;
+  display: block;
+  line-height: 6rem;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  transition: background 0.5s;
+}
+
+.mainmenu > li:hover > a{
+  background: #f61900;
+}
+
+/*submenu*/
+.submenu {
+  position: relative;
+  background-color: #000000;
+  height: 0;
+  /*transition*/
+  transition: height 1s;
+}
+
+.submenu li{
+  position: relative;
+}
+
+.submenu li a{
+  display: block;
+  line-height: 4rem;
+  text-align: center;
+  color: #ffffff;
+  text-transform: capitalize;
+  transition: background 0.5s;
+}
+
+.submenu li:hover a{
+  background: #f61900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 메인영역 */
+.main {
+  position: relative;
+}
+.slide {
+  position: relative;
+  display: block;
+  height: 30rem;
+  background: orange;
+}
+.board {
+  position: relative;
+  background: green;
+  overflow: hidden;
+}
+.notice {
+  position: relative;
+  width: 33.33%;
+  height: 20rem;
+  background: rgba(0, 0, 0, 0.5);
+  float: left;
+}
+.gallery {
+  position: relative;
+  width: 33.33%;
+  height: 20rem;
+  background: rgba(0, 0, 0, 0.1);
+  float: left;
+}
+.banner {
+  position: relative;
+  width: 33.34%;
+  height: 20rem;
+  background: rgba(0, 0, 0, 0.8);
+  float: left;
+}
+/* 하단영역 */
+.footer {
+  position: relative;
+  /*height: 10rem;*/
+  overflow: hidden;
+}
+.f_left {
+  position: relative;
+  width: 15%;
+  height: 10rem;
+  float: left;
+  background: #000;
+  color: #fff;
+}
+.f_right {
+  position: relative;
+  width: 85%;
+  height: 10rem;
+  background: gray;
+  float: left;
+}
+.f_menu {
+  position: relative;
+  height: 5rem;
+  background: rgba(255,255,255,0.5);
+}
+.f_copy {
+  position: relative;
+  height: 5rem;
+  background: rgba(255,255,255,0.7);
+}
+
+
+
+/* 반응형 코드 */
+@media all and (max-width: 1200px) {
+  .wrap {
+    width: 100%;
+  }
+}
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 960px) {
+  #mobile_close_btn {
+    display: block;
+  }
+
+  input[type="checkbox"]#gnbcheck:checked ~ .header .gnb {
+    left: 0;
+  }
+
+  #gnbbtn { display: block; }
+
+  .gnb {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    left: -100%;
+    background: rgba(0,0,0,.8);
+    transition: .5s ease-in-out;
+  }
+
+  .gnb ul.mainmenu {
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .gnb ul.mainmenu li {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 0px;
+  }
+}
+@media all and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+  .notice {
+    width: 50%;
+  }
+  .gallery {
+    width: 50%;
+  }
+  .banner {
+    width: 100%
+  }
+}
+@media all and (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+  .notice {
+    width: 100%;
+  }
+  .gallery {
+    width: 100%;
+  }
+}
+@media all and (max-width: 340px) {
+}
