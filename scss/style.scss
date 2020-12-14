@@ -241,11 +241,6 @@ section{
       border-radius: 5px;
     }
   }
-  &#myskill{
-    background: url('../img/myskill/my_skill.jpg') no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
   &>article{
     text-align: center;
     padding: 0 20%;
@@ -257,6 +252,12 @@ section{
       font-size: 20px;
     }
   }
+}
+
+#myskill{
+  background: url('../img/myskill/my_skill.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 

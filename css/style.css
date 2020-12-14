@@ -266,12 +266,6 @@ section#portfolio .row .column .inner img {
   border-radius: 5px;
 }
 
-section#myskill {
-  background: url("../img/myskill/my_skill.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 section > article {
   text-align: center;
   padding: 0 20%;
@@ -284,6 +278,12 @@ section > article > h2 {
 
 section > article > p {
   font-size: 20px;
+}
+
+#myskill {
+  background: url("../img/myskill/my_skill.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 section#myskill .row > h2, section#myskill .row .column .inner > p {
