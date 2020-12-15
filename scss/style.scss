@@ -181,25 +181,25 @@ section{
         }
       }
     }
-    &.project{
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      width: 1300px;
-      color: #333333;
-      padding: 120px 0;
-      box-sizing: border-box;
-      .column{
-        display: block;
-        .inner{
-          img{
-            width: 100%;
-          }
-        }
-      }
-    }
+    // &.project{
+    //   position: relative;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+    //   flex-wrap: wrap;
+    //   width: 1300px;
+    //   color: #333333;
+    //   padding: 120px 0;
+    //   box-sizing: border-box;
+    //   .column{
+    //     display: block;
+    //     .inner{
+    //       img{
+    //         width: 10%;
+    //       }
+    //     }
+    //   }
+    // }
   }
   // &#intro{
   //   background: url('../img/bg/g_01.png') no-repeat;
@@ -326,24 +326,44 @@ section{
           background: #fff;
           border-radius: 5px;
           position: absolute;
+          box-shadow: 2px 10px 10px rgba(0,0,0,.1);
           h2{
-            margin-top: 10px;
-            margin-left: 10px;
+            margin-top: 33px;
+            margin-left: 36px;
             font-size: 13px;
             color: #ff7c98;
           }
           p{
             font-size: 12px;
-            margin-left: 10px;
+            margin-left: 36px;
           }
           img{
             position: absolute;
           }
           button{
-            width: 32px;
-            height: 32px;
-            border-radius: 100%;
-            border: 1px solid #666;
+            position: relative;
+            width: 90px;
+            height: 33px;
+            border: none;
+            background: none;
+            margin-left: 36px;
+            a{
+              position: absolute;
+              left: 0;
+              width: 31px;
+              height: 31px;
+              border-radius: 100%;
+              border: 1px solid #999;
+              background: url('../img/myskill/right_arrow.png');
+            }
+            p{
+              line-height: 33px;
+              font-size: 12px;
+              color: #999;
+              padding: 0;
+              margin: 0;
+              margin-left: 20px;
+            }
           }
         }
         .le{
@@ -390,6 +410,17 @@ section{
           height: 177px;
           top: 715px;
           left: 268px;
+          h2,p,button{
+            float: right;
+            text-align: right;
+            margin-right: 36px;
+          }
+          button{
+            width: 75px;
+            p{
+              margin-left: 0;
+            }
+          }
           img{
             left: -42px;
             bottom: -79px;
@@ -491,8 +522,7 @@ section .row .column{
   }
 }
 
-#project .row.project .col_wrap{
-  display: relative;
+.col_wrap{
   .column{
     flex: 25%;
     .inner{

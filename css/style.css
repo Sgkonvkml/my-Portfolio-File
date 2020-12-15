@@ -207,26 +207,6 @@ section .row .column .inner img.shadow:hover {
   box-shadow: none;
 }
 
-section .row.project {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1300px;
-  color: #333333;
-  padding: 120px 0;
-  box-sizing: border-box;
-}
-
-section .row.project .column {
-  display: block;
-}
-
-section .row.project .column .inner img {
-  width: 100%;
-}
-
 section#myprofile {
   background: url("../img/bg/about_bg.jpg") no-repeat;
   background-size: cover;
@@ -357,18 +337,19 @@ section > article > p {
   background: #fff;
   border-radius: 5px;
   position: absolute;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 #myskill .row .column .co_wrap .col h2 {
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-top: 33px;
+  margin-left: 36px;
   font-size: 13px;
   color: #ff7c98;
 }
 
 #myskill .row .column .co_wrap .col p {
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: 36px;
 }
 
 #myskill .row .column .co_wrap .col img {
@@ -376,10 +357,31 @@ section > article > p {
 }
 
 #myskill .row .column .co_wrap .col button {
-  width: 32px;
-  height: 32px;
+  position: relative;
+  width: 90px;
+  height: 33px;
+  border: none;
+  background: none;
+  margin-left: 36px;
+}
+
+#myskill .row .column .co_wrap .col button a {
+  position: absolute;
+  left: 0;
+  width: 31px;
+  height: 31px;
   border-radius: 100%;
-  border: 1px solid #666;
+  border: 1px solid #999;
+  background: url("../img/myskill/right_arrow.png");
+}
+
+#myskill .row .column .co_wrap .col button p {
+  line-height: 33px;
+  font-size: 12px;
+  color: #999;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
 }
 
 #myskill .row .column .co_wrap .le {
@@ -434,6 +436,20 @@ section > article > p {
   height: 177px;
   top: 715px;
   left: 268px;
+}
+
+#myskill .row .column .co_wrap .bottom h2, #myskill .row .column .co_wrap .bottom p, #myskill .row .column .co_wrap .bottom button {
+  float: right;
+  text-align: right;
+  margin-right: 36px;
+}
+
+#myskill .row .column .co_wrap .bottom button {
+  width: 75px;
+}
+
+#myskill .row .column .co_wrap .bottom button p {
+  margin-left: 0;
 }
 
 #myskill .row .column .co_wrap .bottom img {
@@ -537,15 +553,11 @@ section .row .column .inner img {
   width: 100%;
 }
 
-#project .row.project .col_wrap {
-  display: relative;
-}
-
-#project .row.project .col_wrap .column {
+.col_wrap .column {
   flex: 25%;
 }
 
-#project .row.project .col_wrap .column .inner {
+.col_wrap .column .inner {
   margin: 15px;
   padding: 15px;
   background: white;
@@ -555,7 +567,7 @@ section .row .column .inner img {
   border-radius: 5px;
 }
 
-#project .row.project .col_wrap .column .inner img {
+.col_wrap .column .inner img {
   width: 100%;
 }
 
