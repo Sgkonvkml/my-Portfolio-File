@@ -201,10 +201,10 @@ section{
       }
     }
   }
-  &#intro{
-    background: url('../img/bg/g_01.png') no-repeat;
-    background-size: cover;
-  }
+  // &#intro{
+  //   background: url('../img/bg/g_01.png') no-repeat;
+  //   background-size: cover;
+  // }
   &#myprofile{
     background: url('../img/bg/about_bg.jpg') no-repeat;
     background-size: cover;
@@ -254,16 +254,169 @@ section{
   }
 }
 
+#intro .inner{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  right: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  article{
+    margin: 500px;
+  }
+}
+
+/*uesing swipe loop*/
+#intro .inner.first{
+  background-image: url('../img/bg/g_01.png');
+  z-index: 999;
+}
+
+#intro .inner.second{
+  background-image: url('../img/bg/g_02.png');
+  z-index: 500;
+}
+
+#intro .inner.third{
+  background-image: url('../img/bg/g_03.png');
+}
+
+#intro .inner.fourth{
+  background-image: url('../img/bg/g_04.png');
+}
+
+#intro .inner.fifth{
+  background-image: url('../img/bg/g_05.png');
+}
+
+#intro .inner.sixth{
+  background-image: url('../img/bg/g_06.png');
+}
+
+#intro .inner.seventh{
+  background-image: url('../img/bg/g_07.png');
+}
+
+#intro .inner.eighth{
+  background-image: url('../img/bg/g_08.png');
+}
+
 #myskill{
   background: url('../img/myskill/my_skill.jpg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-
-
-section#myskill .row > h2,section#myskill .row .column .inner > p{
-  color: white;
+  min-height: 990px;
+  .row{
+    width: 960px;
+    height: 1200px;
+    h2{
+      color: #333;
+    }
+    .column{
+      display: relative;
+      width: 100%;
+      height: 100%;
+      .co_wrap{
+        position: relative;
+        .col{
+          background: #fff;
+          border-radius: 5px;
+          position: absolute;
+          h2{
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 13px;
+            color: #ff7c98;
+          }
+          p{
+            font-size: 12px;
+            margin-left: 10px;
+          }
+          img{
+            position: absolute;
+          }
+          button{
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+            border: 1px solid #666;
+          }
+        }
+        .le{
+          width: 635px;
+          right: 0;
+        }
+        .ri{
+          top: 0;
+          right: 49px;
+        }
+        .top{
+          top: 44px;
+          left: 202px;
+          width: 395px;
+          height: 302px;
+          img{
+            top: -43px;
+            left: 75px;
+            z-index: 500;
+          }
+        }
+        .left{
+          width: 230px;
+          height: 366px;
+          top: 383px;
+          left: 0;
+          img{
+            left: 29px;
+            bottom: -36px;
+          }
+        }
+        .mid{
+          width: 329px;
+          height: 292px;
+          top: 383px;
+          left: 268px;
+          img{
+            right: 25px;
+            bottom: 25px;
+          }
+        }
+        .bottom{
+          width: 329px;
+          height: 177px;
+          top: 715px;
+          left: 268px;
+          img{
+            left: -42px;
+            bottom: -79px;
+          }
+        }
+        .r_top{
+          width: 276px;
+          height: 472px;
+          top: 44px;
+          img{
+            left: 58px;
+            bottom: 100px;
+          }
+        }
+        .r_bottom{
+          width: 276px;
+          height: 183px;
+          top: 554px;
+          right: 49px;
+          img{
+            left: 30px;
+            bottom: -114px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /*section row title style*/
@@ -286,10 +439,6 @@ section .row > h2:before{
   background: #dddddd;
   bottom: 1px;
   left: calc( 50% - 60px );
-}
-
-#myskill img{
-  width: 1000px;
 }
 
 section .row > h2:after{
@@ -365,18 +514,16 @@ section .row .column{
   background: #000000; /*black = #000 = #000000 */
   color: #ffffff; /*white = #fff = #ffffff*/
   font-size: 14px;
-}
-
-#footer .footer_top{
-  background: #111111;
-  padding: 60px 0 30px;
-  /*padding-top: 60px; padding-left: 0; padding-right: 0; padding-bottom: 30px;*/
-}
-
-#footer .container{
-  /*footer_top의 .container와 #footer 의 자식요소 .container의 공통스타일 적용*/
-  margin: 0 auto;
-  width: 1140px;
+  .footer_top{
+    background: #111111;
+    padding: 60px 0 30px;
+    /*padding-top: 60px; padding-left: 0; padding-right: 0; padding-bottom: 30px;*/
+  }
+  .container{
+    /*footer_top의 .container와 #footer 의 자식요소 .container의 공통스타일 적용*/
+    margin: 0 auto;
+    width: 1140px;
+  }
 }
 
 #footer > .container{

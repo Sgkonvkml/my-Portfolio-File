@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>portfolio page baskin robbins</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!--css initailize 초기화 -->
     <link rel="stylesheet" href="css/initial.min.css"/>
     <!--layout css-->
@@ -12,6 +13,7 @@
      <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--jqeury 라이브러리 가져오기-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
   </head>
@@ -43,10 +45,46 @@
        </ul>
      </nav>
    </header>
-   <section id="intro">
-     <article>
-       <a href="#myprofile" class="button">get started</a>
-     </article>
+   <section id="intro" class="swiper-container">
+     <div class="swiper-wrapper">
+       <div class="inner first swiper-slide">
+         <!-- <article>
+           <a href="#myprofile" class="button">get started 1</a>
+         </article> -->
+       </div>
+       <div class="inner second swiper-slide">
+         <!-- <article>
+           <a href="#myprofile" class="button">get started 2</a>
+         </article> -->
+       </div>
+       <div class="inner third swiper-slide">
+         <!-- <article>
+           <a href="#myprofile" class="button">get started 3</a>
+         </article> -->
+       </div>
+       <div class="inner fourth swiper-slide">
+         <!-- <article>
+           <a href="#myprofile" class="button">get started 4</a>
+         </article> -->
+       </div>
+       <div class="inner fifth swiper-slide">
+         <!-- <article>
+           <a href="#myprofile" class="button">get started 5</a>
+         </article> -->
+       </div>
+       <div class="inner sixth swiper-slide">
+         <!-- <article>
+           <a href="#myprofile" class="button">get started 6</a>
+         </article> -->
+       </div>
+       <div class="inner seventh swiper-slide"></div>
+       <div class="inner eighth swiper-slide"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
    </section>
    <main>
      <!--menu section 노출영역-->
@@ -152,8 +190,38 @@
        <div class="row">
          <h2>BR MENU</h2>
          <div class="column">
-           <div class="inner none_type">
-             <h2></h2>
+           <div class="co_wrap">
+             <div class="col le top">
+               <h2>ICECREAM</h2>
+               <p>아이스크림의 기준,<br>배스킨라빈스</p>
+               <button><img src="img/my_skill/right_arrow.png" alt="page_arrow"></button>
+               <img src="img/myskill/icecream.png" alt="icecream">
+             </div>
+             <div class="col le left">
+               <h2>BEBERAGE</h2>
+               <p>아이스크림으로 즐기는<br>배스킨라빈스만의 음료!</p>
+               <img src="img/myskill/beberage.png" alt="beberage">
+             </div>
+             <div class="col le mid">
+               <h2>COFFEE</h2>
+               <p>배스킨라빈스만의<br>부드러운 촉감과<br>달콤한 풍미!</p>
+               <img src="img/myskill/coffee.png" alt="coffee">
+             </div>
+             <div class="col le bottom">
+               <h2>DESSERT</h2>
+               <p>아이스크림을 더욱 재미있게!<br>간편하게 즐기는 방법!</p>
+               <img src="img/myskill/dessert.png" alt="dessert">
+             </div>
+             <div class="col ri r_top">
+               <h2>ICECREAM CAKE</h2>
+               <p>아이와 어른이 좋아하는<br>아이스크림을 하나의 케이크에서<br>모두 즐기세요!</p>
+               <img src="img/myskill/icecream_cake.png" alt="icecream_cake">
+             </div>
+             <div class="col ri r_bottom">
+               <h2>GIFT</h2>
+               <p>특별한 날, 배스킨라빈스로<br>달콤한 선물을 전해보세요!</p>
+               <img src="img/myskill/gift.png" alt="gift">
+             </div>
            </div>
          </div>
        </div>

@@ -1,5 +1,21 @@
 $(function(){
 
+  var swiper = new Swiper('.swiper-container', {
+        loop: true, //infinity loop
+        autoplay: { //autoplay
+          delay: 4000, //기준 ms2500ms --> 2.5s
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination-h',
+          clickable: true,
+        }
+     });
+
   //script 입력영역
   $("nav ul li a,.back_to_top a,.footer_top a,a.button").click(function(e){
     // console.log($(this.hash).offset().top);
